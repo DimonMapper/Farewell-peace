@@ -3,7 +3,7 @@
 void main() {
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
     // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Добро пожаловать!"));
+    IO.println(String.format("Добро пожаловать!!"));
 
     for (int i = 1; i <= 10; i++) {
         IO.println("i = " +i);
