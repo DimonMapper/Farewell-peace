@@ -6,6 +6,6 @@ void main() {
     IO.println(String.format("Добро пожаловать!"));
 
     for (int i = 1; i <= 10; i++) {
-        IO.println("i = " + i);
+        IO.println("i = " +i);
     }
 }
