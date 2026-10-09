@@ -15,7 +15,6 @@ void main() {
     System.out.println("Значение переменной h с типом double равно " + h);
 
 //task 2
-
     float a = 27.12f;
     long b = 987678965549L;
     float c = 2.786f;
