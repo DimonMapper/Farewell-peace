@@ -33,9 +33,9 @@ void main() {
     System.out.println("Значение переменной g с типом byte равно " + g);
 
 //task 3
-    byte ludmila = 23;
-    byte anna = 27;
-    byte ekaterina = 30;
+    short ludmila = 23;
+    short anna = 27;
+    short ekaterina = 30;
     short papers = 480;
     short paper = (short) (papers / (ludmila + anna + ekaterina));
     System.out.println("task 3");
@@ -58,9 +58,9 @@ void main() {
 
 //task 5
     System.out.println("task 5");
-    byte allPaint = 120;
-    byte brownPaint = 2;
-    byte whitePaint = 4;
+    short allPaint = 120;
+    short brownPaint = 2;
+    short whitePaint = 4;
     short klass = (short) (allPaint / (brownPaint + whitePaint));
     short allBp = (short) (klass * brownPaint);
     short allWp = (short) (klass * whitePaint);
