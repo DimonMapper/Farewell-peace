@@ -15,13 +15,12 @@ void main() {
     System.out.println("Значение переменной h с типом double равно " + h);
 
 //task 2
-
-    float a = 27.12f;
+    double a = 27.12d;
     long b = 987678965549L;
     float c = 2.786f;
     short d = 569;
     short e = -159;
-    short f = 27897;
+    int f = 27897;
     byte g = 67;
     System.out.println("task 2");
     System.out.println("Значение переменной a с типом float равно " + a);
@@ -33,9 +32,9 @@ void main() {
     System.out.println("Значение переменной g с типом byte равно " + g);
 
 //task 3
-    byte ludmila = 23;
-    byte anna = 27;
-    byte ekaterina = 30;
+    short ludmila = 23;
+    short anna = 27;
+    short ekaterina = 30;
     short papers = 480;
     short paper = (short) (papers / (ludmila + anna + ekaterina));
     System.out.println("task 3");
@@ -44,23 +43,26 @@ void main() {
 //task 4
     System.out.println("task 4");
     byte t1 = 20;
-    short t2 = 3 * 60 * 24;
-    int t3 = 30 * 60 * 24;
+    short t2 = 60 * 24;
+    short t3 = 3 * 60 * 24;
+    int t4 = 30 * 60 * 24;
     byte time = 2;
     byte bottle = 16;
     byte result = (byte) (bottle / time);
     short result1 = (short) (t1 * result);
     System.out.println("За 20 минут машина произвела " + result1 + " штук бутылок");
     int result2 = t2 * result;
-    System.out.println("За 3 дня машина произвела " + result2 + " штук бутылок");
+    System.out.println("За сутки машина произвела " + result2 + " штук бутылок");
     int result3 = t3 * result;
-    System.out.println("За 1 месяц машина произвела " + result3 + " штук бутылок");
+    System.out.println("За 3 дня машина произвела " + result3 + " штук бутылок");
+    int result4 = t4 * result;
+    System.out.println("За 1 месяц машина произвела " + result4 + " штук бутылок");
 
 //task 5
     System.out.println("task 5");
-    byte allPaint = 120;
-    byte brownPaint = 2;
-    byte whitePaint = 4;
+    short allPaint = 120;
+    short brownPaint = 4;
+    short whitePaint = 2;
     short klass = (short) (allPaint / (brownPaint + whitePaint));
     short allBp = (short) (klass * brownPaint);
     short allWp = (short) (klass * whitePaint);
@@ -85,9 +87,9 @@ void main() {
     short gramToKg = 1000;
     short daysWeight1 = ((short) (allWeight * gramToKg / (weight1)));
     short daysWeight2 = ((short) (allWeight * gramToKg / (weight2)));
+    short midDays = ((short) ((daysWeight1+daysWeight2) / 2));
     System.out.println("task 7");
-    System.out.println(daysWeight1 + " дней в среднем может потребоваться, чтобы добиться результата похудения при первом способе");
-    System.out.println(daysWeight2 + " дней в среднем может потребоваться, чтобы добиться результата похудения при втором способе");
+    System.out.println(midDays + " дней в среднем может потребоваться, чтобы добиться результата похудения при втором способе");
 //task 8
 
     int curSalMasha = 67760;
