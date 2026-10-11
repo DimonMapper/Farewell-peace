@@ -37,9 +37,9 @@ void main() {
 //task 4
     System.out.print("Введите возраст:");
     byte ages = scannerInput1.nextByte();
-    if (ages >= 0 && ages <=2 ) {
+    if (ages >= 0 && ages <2 ) {
         System.out.println("Если возраст человека равен " + ages + ", то ему нужно научиться ходить");
-    } else if (ages > 2 && ages <= 6) {
+    } else if (ages >= 2 && ages <= 6) {
         System.out.println("Если возраст человека равен " + ages + ", то ему нужно ходить в детский сад");
     } else if (ages > 6 && ages <= 17) {
         System.out.println("Если возраст человека равен " + ages + ", то ему нужно ходить в школу");
@@ -65,9 +65,9 @@ void main() {
 //task 6
     System.out.print("Введите количество людей в вагоне:");
     short countInVagon = scannerInput1.nextShort();
-    if (countInVagon >= 0 && countInVagon <= 59) {
+    if (countInVagon >= 0 && countInVagon < 60) {
         System.out.println("В вагоне есть сидячие места");
-    } else if (countInVagon > 60 && countInVagon <= 101) {
+    } else if (countInVagon >= 60 && countInVagon <= 102) {
         System.out.println("В вагоне есть стоячие места");
     } else {
         System.out.println("В вагоне нет мест");
@@ -81,11 +81,11 @@ void main() {
     System.out.print("Введите значение three:");
     int three = scannerInput3.nextInt();
     if (one >= two && one >= three) {
-        System.out.println("one самое большое число");
+        System.out.println("one = "+one+" самое большое число");
     } else if (two >= one && two >= three) {
-        System.out.println("two самое большое число");
+        System.out.println("two = "+two+" самое большое число");
     } else {
-        System.out.println("three самое большое число");
+        System.out.println("three = "+three+" самое большое число");
     }
 
     scannerInput1.close();
