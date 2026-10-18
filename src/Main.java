@@ -8,14 +8,12 @@ void main() {
     // 1 task
     System.out.println("Введите значение в зависимости от ОС вашего устройства: ");
     byte clientOS = scannerInput1.nextByte();
-
-    switch (clientOS) {
-        case 0:
-            System.out.println("Установите версию приложения для iOS по ссылке");
-            break;
-        case 1:
-            System.out.println("Установите версию приложения для Android по ссылке");
-            break;
+    if (clientOS == 0) {
+        System.out.println("Установите версию приложения для iOS по ссылке");
+    } else if (clientOS == 1) {
+        System.out.println("Установите версию приложения для Android по ссылке");
+    }  else {
+        System.out.println("Клиент не использует iOS или Android");
     }
 
 
@@ -35,6 +33,8 @@ void main() {
         System.out.println("Установите облегченную версию приложения для Android по ссылке");
     } else if (clientOS1 == 1) {
         System.out.println("Установите версию приложения для Android по ссылке");
+    }  else {
+        System.out.println("Клиент не использует iOS или Android");
     }
 
 
