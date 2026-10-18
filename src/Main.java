@@ -16,9 +16,6 @@ void main() {
         System.out.println("Клиент не использует iOS или Android");
     }
 
-
-
-
 //task 2
     System.out.println("Введите значение в зависимости от ОС вашего устройства: ");
     byte clientOS1 = scannerInput1.nextByte();
