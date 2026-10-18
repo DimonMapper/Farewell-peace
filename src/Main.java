@@ -67,9 +67,10 @@ void main() {
     System.out.println(" ");
     System.out.println("8 task");
     System.out.println(" ");
+    int salary = 29000;
     int capital = 0;
-    for (int i = 1; i <= 12; i = i + 1) {
-        capital=capital + 29000;
+    for (int i = 0; i < 12; i = i + 1) {
+        capital=capital + salary;
         System.out.println("Месяц "+i+", сумма накоплений равна "+capital+" рублей");
     }
 
@@ -77,18 +78,19 @@ void main() {
     System.out.println(" ");
     System.out.println("9 task");
     System.out.println(" ");
-    int capital1 = 0;
-    for (int i = 1; i <= 12; i = i + 1) {
-        capital1=capital1 + 29000;
-        capital1=capital1 + (capital1/100);
-        System.out.println("Месяц "+i+", сумма накоплений равна "+capital1+" рублей");
+    int salary1 = 29000;
+    int total = 0;
+    for (int i = 0; i < 12; i++) {
+        total=total + (total/100);
+        total=total + salary1;
+        System.out.println("Месяц "+i+", сумма накоплений равна "+total+" рублей");
     }
 //task 10
     System.out.println(" ");
     System.out.println("10 task");
     System.out.println(" ");
     int result ;
-    for (int i = 1; i < 11; i = i +1) {
+    for (int i = 1; i < 11; i++) {
         result = 2*i;
         System.out.println("2*"+i+"="+result);
     }
