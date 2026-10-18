@@ -1,103 +1,98 @@
-import java.util.Scanner;
-
 void main() {
-    Scanner scannerInput1 = new Scanner(System.in);
-    Scanner scannerInput2 = new Scanner(System.in);
-    Scanner scannerInput3 = new Scanner(System.in);
-
     // 1 task
-    System.out.println("Введите значение в зависимости от ОС вашего устройства: ");
-    byte clientOS = scannerInput1.nextByte();
-    if (clientOS == 0) {
-        System.out.println("Установите версию приложения для iOS по ссылке");
-    } else if (clientOS == 1) {
-        System.out.println("Установите версию приложения для Android по ссылке");
-    }  else {
-        System.out.println("Клиент не использует iOS или Android");
+    System.out.println(" ");
+    System.out.println("1 task");
+    System.out.println(" ");
+    for (int i = 1; i <= 10; i = i + 1) {
+        System.out.print(i + " ");
     }
+    System.out.println(" ");
 
 //task 2
-    System.out.println("Введите значение в зависимости от ОС вашего устройства: ");
-    byte clientOS1 = scannerInput1.nextByte();
-    System.out.println("Введите год устройства: ");
-    int clientDeviceYear = scannerInput2.nextInt();
-
-    if (clientOS1 == 0 && clientDeviceYear < 2015) {
-        System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-    } else if (clientOS1 == 0) {
-        System.out.println("Установите версию приложения для iOS по ссылке");
-    } else if (clientOS1 == 1 && clientDeviceYear < 2015) {
-        System.out.println("Установите облегченную версию приложения для Android по ссылке");
-    } else if (clientOS1 == 1) {
-        System.out.println("Установите версию приложения для Android по ссылке");
-    }  else {
-        System.out.println("Клиент не использует iOS или Android");
+    System.out.println(" ");
+    System.out.println("2 task");
+    System.out.println(" ");
+    for (int i = 10; i > 0; i = i - 1) {
+        System.out.print(i + " ");
     }
+    System.out.println(" ");
 
 
 //task 3
-    System.out.print("Введите год:");
-    int year = scannerInput1.nextInt();
-    if (year <= 1584) {
-        System.out.println("Год должен быть больше 1584");
-    } else if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
-        System.out.println(year + " год является високосным");
-    } else {
-        System.out.println(year + " год не является високосным");
+    System.out.println(" ");
+    System.out.println("3 task");
+    System.out.println(" ");
+    for (int i = 0; i < 17; i = i + 2) {
+        System.out.print(i + " ");
     }
-
-
-
+    System.out.println(" ");
 
 //task 4
-    System.out.print("Введите расстояние в км:");
-    int deliveryDistance = scannerInput1.nextInt();
-
-    if (deliveryDistance <= 20) {
-        System.out.println("Потребуется дней: 1");
-    } else if (deliveryDistance <= 60) {
-        System.out.println("Потребуется дней: 2");
-    } else if (deliveryDistance <= 100) {
-        System.out.println("Потребуется дней: 3");
-    } else {
-        System.out.println("Доставки нет");
+    System.out.println(" ");
+    System.out.println("4 task");
+    System.out.println(" ");
+    for (int i = 10; i > -11; i = i - 1) {
+        System.out.print(i + " ");
     }
-
+    System.out.println(" ");
 
 //task 5
-    System.out.print("Введите цифру месяца:");
-    byte monthNumber = scannerInput1.nextByte();
-
-    if (monthNumber < 1 || monthNumber > 12) {
-        System.out.println("Некорректный номер месяца");
-        return;
+    System.out.println(" ");
+    System.out.println("5 task");
+    System.out.println(" ");
+    for (int year = 1904; year < 2100; year = year + 1) {
+        if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+            System.out.println(year + " год является високосным");
+        }
     }
 
-    switch (monthNumber) {
-        case 1:
-        case 2:
-        case 12:
-            System.out.println("Зима");
-            break;
-        case 3:
-        case 4:
-        case 5:
-            System.out.println("Весна");
-            break;
-        case 6:
-        case 7:
-        case 8:
-            System.out.println("Лето");
-            break;
-        case 9:
-        case 10:
-        case 11:
-            System.out.println("Осень");
-            break;
+//task 6
+    System.out.println(" ");
+    System.out.println("6 task");
+    System.out.println(" ");
+    for (int i = 7; i < 100; i = i + 7) {
+        System.out.print(i+" ");
+    }
+    System.out.println(" ");
+
+//task 7
+    System.out.println(" ");
+    System.out.println("7 task");
+    System.out.println(" ");
+    for (int i = 1; i < 600; i = i * 2) {
+        System.out.print(i+" ");
+    }
+    System.out.println(" ");
+//task 8
+    System.out.println(" ");
+    System.out.println("8 task");
+    System.out.println(" ");
+    int capital = 0;
+    for (int i = 1; i <= 12; i = i + 1) {
+        capital=capital + 29000;
+        System.out.println("Месяц "+i+", сумма накоплений равна "+capital+" рублей");
     }
 
-    scannerInput1.close();
-    scannerInput2.close();
-    scannerInput3.close();
+//task 9
+    System.out.println(" ");
+    System.out.println("9 task");
+    System.out.println(" ");
+    int capital1 = 0;
+    for (int i = 1; i <= 12; i = i + 1) {
+        capital1=capital1 + 29000;
+        capital1=capital1 + (capital1/100);
+        System.out.println("Месяц "+i+", сумма накоплений равна "+capital1+" рублей");
+    }
+//task 10
+    System.out.println(" ");
+    System.out.println("10 task");
+    System.out.println(" ");
+    int result ;
+    for (int i = 1; i < 11; i = i +1) {
+        result = 2*i;
+        System.out.println("2*"+i+"="+result);
+    }
 
+//task 5
+//task 5
 }
