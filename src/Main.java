@@ -1,4 +1,3 @@
-
 public class Main {
     public static void main(String[] args) {
         Product p1 = new Product(1001, "Ноутбук", 70000, "Электроника");

@@ -2,8 +2,8 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Order {
-    private String customer;
-    private Product[] basket;
+    private final String customer;
+    private final Product[] basket;
 
 
     public Order(String customer, Product[] basket) {
@@ -11,8 +11,8 @@ public class Order {
         this.basket = basket;
     }
 
-    public String getCustomer() { return customer; }
-    public Product[] getBasket() { return basket; }
+   //public String getCustomer() { return customer; }
+   // public Product[] getBasket() { return basket; }
 
     @Override
     public String toString() {

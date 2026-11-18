@@ -1,11 +1,10 @@
-import java.util.Arrays;
 import java.util.Objects;
 
 public class Product {
-    private int id;
-    private String name;
-    private int price;
-    private String category;
+    private final int id;
+    private final String name;
+    private final int price;
+    private final String category;
 
     public Product(int id, String name, int price, String category) {
         this.id = id;
@@ -14,10 +13,10 @@ public class Product {
         this.category = category;
     }
 
-    public int getId() { return id; }
-    public String getName() { return name; }
-    public int getPrice() { return price; }
-    public String getCategory() { return category; }
+   // public int getId() { return id; }
+   // public String getName() { return name; }
+   // public int getPrice() { return price; }
+   // public String getCategory() { return category; }
 
     @Override
     public String toString() {
@@ -37,5 +36,3 @@ public class Product {
         return Objects.hash(id, category);
     }
 }
-
-
